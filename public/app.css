@@ -132,3 +132,15 @@ footer,
 .list-names button:hover {
     background-color: #a71d2a;
 }
+
+.list-names .edit-confirm-button {
+    background-color: #004d7a;
+}
+
+.list-names .edit-confirm-button:hover {
+    background-color: #003853;
+}
+
+.list-names .edit-input {
+    flex: 1;
+}
