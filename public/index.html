@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aula 01</title>
+  <title>Aula 03 - Usuários</title>
   <link rel="stylesheet" href="./app.css">
   <script src="./app.js" type="module"></script>
 </head>
-
 <body>
-
-  <header>
-    <h1>Aula 01</h1>
-  </header>
-
+  <header><h1>Aula 03 - Lista de usuários</h1></header>
   <main>
-
     <article>
-      <section id="list-container"></section>
+      <p id="user-feedback" role="alert" aria-live="polite"></p>
+      <ul id="user-list" class="list-names"></ul>
+      <nav class="pagination" aria-label="Paginação de usuários">
+        <button id="previous-page" type="button">Anterior</button>
+        <span id="current-page"></span>
+        <button id="next-page" type="button">Próxima</button>
+      </nav>
     </article>
-    <aside>
-      <img src="./img/squirtle.png" alt="Squirtle, personagem Pokémon" />
-      <input type="text" id="list-add" name="item" placeholder="Digite um item..." />
-      <button class="btn" type="button">Adicionar</button>
-    </aside>
   </main>
-
-  <footer>
-    <button class="btn">Outro gato!</button>
-    <div>Frontend 2026.2</div>
-  </footer>
-
+  <footer><div>Frontend 2026.2</div></footer>
 </body>
-
 </html>

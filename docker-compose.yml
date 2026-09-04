@@ -1,5 +1,14 @@
 services:
 
+  nodecommand-container:
+    build:
+      context: .
+      dockerfile: docker/node/Dockerfile
+    volumes:
+      - users_data:/data
+    networks:
+      - app_network
+
   nginx_01:
     build:
       context: .
@@ -13,6 +22,11 @@ services:
       - ./logs/nginx:/var/log/nginx
     networks:
       - app_network
+    depends_on:
+      - nodecommand-container
+
+volumes:
+  users_data:
 
 networks:
   app_network:
